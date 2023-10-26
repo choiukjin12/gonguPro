@@ -19,9 +19,9 @@ import java.util.*;
 @Service
 public class SmsService {
 
-    String serviceId="ncp:sms:kr:316863861588:test";
-    String accessKey ="SNu5SlFzGUxuRG5glwhI";
-    String secretKey = "yRNVKYYn4qAc0cfdnQo83bjQcneRc1gfGtWH25wc";
+    String serviceId="ncp:sms:kr:316486754341:final";
+    String accessKey ="GoP7wYxKHBQPyoR89LnS";
+    String secretKey = "wmkq5ZUhxGaa61Z2lU3k50rcyCICE2W7vaJ3cO6f";
     String method ="POST";
     String timeStamp = Long.toString(System.currentTimeMillis());
 
@@ -38,7 +38,7 @@ public class SmsService {
         Map<String, Object> body = new HashMap<>();
         body.put("content", "인증 번호(6자리) : " + authNumber);
         body.put("type", "SMS");
-        body.put("from", "01027877504");
+        body.put("from", "01085418968");
         body.put("messages", messages);
 
         WebClient webClient = null;
